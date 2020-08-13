@@ -4,7 +4,8 @@
 
 Practice to nomadcoder clone project
 
-- [https://paint-box.com/](https://paint-box.com/)
+- demo : http://jhseo-git.github.io/scss-donicaida/
+- target : [http://donicaida.com/](http://donicaida.com/)
 
 ## To Clone:
 
