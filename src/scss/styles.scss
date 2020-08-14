@@ -18,3 +18,34 @@ header {
     letter-spacing: 1.2px;
   }
 }
+
+.works {
+  margin-top: 160px;
+  .works__header,
+  .works__list > .works__work {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    border-bottom: 1px solid black;
+  }
+  .works__header {
+    color: $red;
+    padding: 10px 0;
+    span {
+      font-size: 13px;
+    }
+  }
+  .works__list {
+    .works__work {
+      padding: 20px 0;
+      span {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+      }
+      &:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+    }
+  }
+}
