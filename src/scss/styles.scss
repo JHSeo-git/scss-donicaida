@@ -1,12 +1,12 @@
 @import "./_reset";
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "./variables";
+@import "./elements";
 
 * {
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
   font-family: "PT Serif", serif;
   padding: 40px;
   background-color: #f0f0eb;
@@ -16,6 +16,7 @@ header {
   h1 {
     font-size: 2.7rem;
     letter-spacing: 1.2px;
+    color: #444444;
   }
 }
 
@@ -28,10 +29,9 @@ header {
     border-bottom: 1px solid black;
   }
   .works__header {
-    color: $red;
     padding: 10px 0;
     span {
-      font-size: 13px;
+      @extend %redTinyText;
     }
   }
   .works__list {
@@ -47,5 +47,15 @@ header {
         font-style: italic;
       }
     }
+  }
+}
+
+.cv,
+.about {
+  margin-top: 75px;
+  font-size: 30px;
+  line-height: 1.5;
+  span {
+    @extend %redTinyText;
   }
 }
